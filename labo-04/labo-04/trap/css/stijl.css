@@ -1,0 +1,43 @@
+/* stijl.css - labo 4, trap (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --blauw: #1446a0;
+    --roze: #db3069;
+    --geel:#f5d547;
+    --beige:#ebebd3;
+    --cijfer:#2b2b2b;
+}
+main{
+    margin: 1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+}
+div{
+    display: grid;
+    place-items: center;
+    color: white;
+    height: 20vh;
+}
+div:nth-child(1){
+    background-color: var(--blauw);
+}
+div:nth-child(2){
+    background-color: var(--roze);
+    grid-column: 2;
+    grid-row: 2;
+}
+div:nth-child(3){
+    background-color: var(--geel);
+    grid-column: 3;
+    grid-row:3;
+}
+div:nth-child(4){
+    background-color: var(--beige);
+    color: var(--cijfer);
+    grid-column: 4;
+    grid-row:4;
+}
+
+/* === your rules === */

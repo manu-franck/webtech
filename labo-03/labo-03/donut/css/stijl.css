@@ -1,0 +1,41 @@
+/* stijl.css - labo 3, donut (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--oranje: #ec4b03 ;
+--paars: #b99ec1;
+--geel: #f9b700;
+}
+* {
+    box-sizing: border-box; /* zodat de rand binnen de 70% / 90% valt */
+}
+
+main {
+    width: 90vh;
+    height: 90vh;
+    margin: 5vh auto;               /* 5vh boven/onder, gecentreerd */
+    background-color: var(--oranje);
+    border: 0.75rem solid black;
+}
+
+div {
+    width: 70%;
+    height: 70%;                    /* werkt: main heeft een vaste hoogte */
+    margin: 15%;                    /* 15% van de BREEDTE van main, ook boven/onder */
+    background-color: var(--paars);
+    border: 0.75rem solid black;
+    border-radius: 50%;
+    overflow: hidden;               /* snijdt het gele vierkant af */
+}
+
+h1 {
+    width: 90%;
+    height: 90%;
+    margin: -7% 0 0 -7%;            /* negatief naar linksboven */
+    background-color: var(--geel);
+    border: 0.75rem solid black;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5rem;
+}
